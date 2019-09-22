@@ -1,0 +1,30 @@
+﻿@model LessonFirst_MVCBasic.Models.Music
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h2>Delete</h2>
+<dl>
+    <dt>Singer Name</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Singer)
+    </dd>
+
+    <dt>Album Name</dt>
+    <dd>
+        @Html.DisplayFor(model => model.AlbumName)
+    </dd>
+
+    <dt>Songs</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Songs)
+    </dd>
+</dl>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Удалить" />
+}

@@ -1,0 +1,28 @@
+﻿body {
+    background-color: aqua;
+}
+
+table tr td {
+    border: solid 2px black;
+    padding: 5px;
+    font-size: 15px;
+}
+
+table {
+    margin: 50px auto 25px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.copyright {
+    width: 740px; /* Ширина макета без полей */
+    padding: 0 10px 10px; /* Поля */
+    margin: auto; /* Выравнивание по центру */
+    color: black; /* Цвет текста */
+}
+
+ .copyright p {
+    margin: 0 0 5px 170px; /* Отступы текста */
+ }

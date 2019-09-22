@@ -1,0 +1,32 @@
+﻿@model LessonFirst_MVCBasic.Models.Music
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<h3>New Singer</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.id, "Id")
+    <br />
+    @Html.EditorFor(model => model.id)
+    <br />
+    @Html.LabelFor(model => model.Singer, "Singer Name")
+    <br />
+    @Html.EditorFor(model => model.Singer);
+    <br />
+    @Html.LabelFor(model => model.AlbumName, "Album Name")
+    <br />
+    @Html.EditorFor(model => model.AlbumName)
+    <br />
+    @Html.LabelFor(model => model.Songs, "Songs")
+    <br />
+    @Html.TextBoxFor(model => model.Songs)
+    <br />
+    @Html.EditorFor(model => model.Songs)
+    <br />
+    <input type="submit" value="Add"/>
+}

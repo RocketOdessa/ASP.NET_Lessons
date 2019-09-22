@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Music Info";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Music</title>
+    <link rel="stylesheet" href="~/Content/style.css"/>
+</head>
+<body>    
+    <div>
+        <h3>Music Table</h3>
+        <table>
+            <tr>
+                <td><p>Album Name</p></td>
+                <td><p>Singer</p></td>
+                <td><p>Music in album</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.TestMusic)
+            {
+                <tr>
+                    <td><p>@b.AlbumName</p></td>
+                    <td><p>@b.Singer</p></td>
+                    <td>
+                        <p>
+                            @foreach (var item in b.Songs)
+                            {
+                            <p>@item</p>
+                        }</p>
+                        </td>
+                        <td><p><a href="/Home/Buy/@b.id">Купить</a></p></td>
+                    </tr>
+                }
+        </table>
+    </div>
+    <div> 
+        @Html.ActionLink("Add", "Create", "Home")
+    </div>
+    <footer>
+        <div class="footer-bg">
+            Copyright
+        </div>
+    </footer>
+</body>
+</html>

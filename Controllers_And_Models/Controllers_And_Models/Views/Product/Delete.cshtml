@@ -1,0 +1,23 @@
+﻿@model External_Model.Product
+
+@{
+    ViewBag.Title = "Delete";
+}
+<h2>Delete</h2>
+<dl>
+    <dt>Product Name</dt>
+    <dd>
+        @Html.DisplayFor(model => model.PName)
+    </dd>
+
+    <dt>Description</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Description)
+    </dd>
+
+    <dt>Cost</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Cost)
+    </dd>
+</dl>
+    <input type="submit" value="Удалить" />

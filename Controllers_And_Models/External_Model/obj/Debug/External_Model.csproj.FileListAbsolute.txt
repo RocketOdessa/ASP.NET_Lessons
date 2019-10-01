@@ -1,0 +1,12 @@
+C:\Users\RocketOdessa\source\repos\Controllers_And_Models\External_Model\bin\Debug\External_Model.dll
+C:\Users\RocketOdessa\source\repos\Controllers_And_Models\External_Model\bin\Debug\External_Model.pdb
+C:\Users\RocketOdessa\source\repos\Controllers_And_Models\External_Model\obj\Debug\External_Model.csproj.CoreCompileInputs.cache
+C:\Users\RocketOdessa\source\repos\Controllers_And_Models\External_Model\obj\Debug\External_Model.dll
+C:\Users\RocketOdessa\source\repos\Controllers_And_Models\External_Model\obj\Debug\External_Model.pdb
+C:\Users\RocketOdessa\source\repos\Controllers_And_Models\External_Model\obj\Debug\External_Model.csprojAssemblyReference.cache
+D:\C#\ASP.NET_Lessons\Controllers_And_Models\External_Model\bin\Debug\External_Model.dll
+D:\C#\ASP.NET_Lessons\Controllers_And_Models\External_Model\bin\Debug\External_Model.pdb
+D:\C#\ASP.NET_Lessons\Controllers_And_Models\External_Model\obj\Debug\External_Model.csprojAssemblyReference.cache
+D:\C#\ASP.NET_Lessons\Controllers_And_Models\External_Model\obj\Debug\External_Model.csproj.CoreCompileInputs.cache
+D:\C#\ASP.NET_Lessons\Controllers_And_Models\External_Model\obj\Debug\External_Model.dll
+D:\C#\ASP.NET_Lessons\Controllers_And_Models\External_Model\obj\Debug\External_Model.pdb

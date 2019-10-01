@@ -1,0 +1,28 @@
+﻿@model External_Model.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.ID, "Id")
+    <br />
+    @Html.EditorFor(model => model.ID)
+    <br />
+    @Html.LabelFor(model => model.PName, "Product Name")
+    <br />
+    @Html.EditorFor(model => model.PName);
+    <br />
+    @Html.LabelFor(model => model.Cost, "Cost")
+    <br />
+    @Html.EditorFor(model => model.Cost)
+    <br />
+    @Html.LabelFor(model => model.Description, "Description")
+    <br />
+    @Html.EditorFor(model => model.Description)
+    <br />
+    <input type="submit" value="Add" />
+}

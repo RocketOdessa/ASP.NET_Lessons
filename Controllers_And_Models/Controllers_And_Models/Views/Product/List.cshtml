@@ -1,0 +1,25 @@
+﻿@using Controllers_And_Models.HtmlHelpers
+@model Controllers_And_Models.Models.ProductsListViewModel
+  
+
+@{
+    ViewBag.Title = "List";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+</head>
+<body>
+    <div>
+        @foreach (var product in Model.Products)
+        {
+            @Html.Partial("ProductSummary", product)
+        }
+    </div>
+    <div class="btn-group pull-right">
+        @Html.LinksForPage(Model.PagingInfo, x => Url.Action("List", new {page = x }))
+    </div>
+</body>
+</html>

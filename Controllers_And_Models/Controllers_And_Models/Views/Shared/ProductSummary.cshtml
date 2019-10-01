@@ -1,0 +1,17 @@
+﻿@model External_Model.Product
+<div class="well">
+    <h3>
+        <strong>@Model.PName</strong>
+        <span class="pull-right label label-primary">@Model.Cost.ToString("c")</span>
+    </h3>
+    <!--UPDATE 18_07-->
+    @using (Html.BeginForm("Delete","Product", new {id = Model.ID}))
+    {
+    <div class="pull-right">
+        @Html.HiddenFor(x => x.ID)
+            <input type="submit" class="btn btn-danger" value="Delete" 
+                   onclick="return confirm('Are you sure want to delete this item @Model.PName');"/>        
+    </div>
+    }
+    <span class="lead"> @Model.Description</span>
+</div>

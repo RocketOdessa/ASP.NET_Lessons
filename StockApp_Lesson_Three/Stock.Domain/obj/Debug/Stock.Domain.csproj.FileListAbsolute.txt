@@ -1,0 +1,12 @@
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\bin\Debug\Stock.Domain.dll.config
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\bin\Debug\Stock.Domain.dll
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\bin\Debug\Stock.Domain.pdb
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\bin\Debug\EntityFramework.dll
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\bin\Debug\EntityFramework.xml
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\obj\Debug\Stock.Domain.csprojAssemblyReference.cache
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\obj\Debug\Stock.Domain.csproj.CoreCompileInputs.cache
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\obj\Debug\Stock.Domain.csproj.CopyComplete
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\obj\Debug\Stock.Domain.dll
+C:\Users\RocketOdessa\source\repos\StockApp_Lesson_Three\Stock.Domain\obj\Debug\Stock.Domain.pdb

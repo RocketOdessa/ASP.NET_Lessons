@@ -1,0 +1,68 @@
+﻿@model Stock.Domain.Product
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet"/>
+    <title>DeleteProduct</title>
+</head>
+<body>
+    <div>
+        <h2 class="text-danger">Do You Realy want to delete this Product ?</h2>
+        <dl>
+            <dd>
+                @Html.DisplayFor(model => model.ID)
+            </dd>
+            <dt>Product Name</dt>
+            <dd>
+                @Html.DisplayFor(model => model.ProductName)
+            </dd>
+
+            <dt>Description</dt>
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+            <dt>Cost</dt>
+            <dd>
+                @Html.DisplayFor(model => model.PriceUAN)
+            </dd>
+            <dt>Cost (USD)</dt>
+            <dd>
+                @Html.DisplayFor(model => model.PriceUSD)
+            </dd>
+
+            <dt>Code</dt>
+            <dd>
+                @Html.DisplayFor(model => model.ProductCode)
+            </dd>
+
+            <dt>Number</dt>
+            <dd>
+                @Html.DisplayFor(model => model.PartNumber)
+            </dd>
+
+            <dt>Guarantee</dt>
+            <dd>
+                @Html.DisplayFor(model => model.Guarantee)
+            </dd>
+
+            <dt>Wholesale Price</dt>
+            <dd>
+                @Html.DisplayFor(model => model.WholesalePrice)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            <input type="submit" value="Удалить" class="btn btn-primary" />
+        }
+    </div>
+</body>
+</html>

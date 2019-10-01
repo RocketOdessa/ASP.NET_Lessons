@@ -1,0 +1,55 @@
+﻿@model Stock.Domain.Product
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <title>CreateProduct</title>
+</head>
+<body>
+    <div class="bg-info">
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(model => model.ProductName, "Product Name")
+            <br />
+            @Html.EditorFor(model => model.ProductName);
+            <br />
+            @Html.LabelFor(model => model.PriceUAN, "UAN Cost")
+            <br />
+            @Html.EditorFor(model => model.PriceUAN)
+            <br />
+            <p class="text-left">Description</p>
+            @Html.TextAreaFor(model => model.Description)
+            <br />
+            @Html.LabelFor(model => model.PriceUSD, "USD Cost")
+            <br />
+            @Html.EditorFor(model => model.PriceUSD);
+            <br />
+            @Html.LabelFor(model => model.ProductCode, "Code")
+            <br />
+            @Html.EditorFor(model => model.ProductCode)
+            <br />
+            @Html.LabelFor(model => model.PartNumber, "Number")
+            <br />
+            @Html.EditorFor(model => model.PartNumber)
+            <br />
+            @Html.LabelFor(model => model.Guarantee, "Guarantee")
+            <br />
+            @Html.EditorFor(model => model.Guarantee)
+            <br />
+            @Html.LabelFor(model => model.WholesalePrice, "Wholesale Price")
+            <br />
+            @Html.EditorFor(model => model.WholesalePrice)
+            <br />
+            <input type="submit" value="Add" class="btn btn-primary" />
+        }
+    </div>
+</body>
+</html>

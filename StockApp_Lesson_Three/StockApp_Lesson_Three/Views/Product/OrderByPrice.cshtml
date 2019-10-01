@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Stock.Domain.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OrderByPrice</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="panel-body">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th class="text-left">ID</th>
+                <th class="text-right">Product Code</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Description</th>
+                <th class="text-center">@Html.ActionLink("UAN","OrderByPrice", new {sortOrder = ViewBag.UANSortParam })</th>
+                <th class="text-right">Wholesale Price</th>
+                <th class="text-center">@Html.ActionLink("USD", "OrderByPrice", new {sortOrder = ViewBag.USDSortParam })</th>
+                <th class="text-right">Guarantee</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-left">@item.ID</td>
+                    <td class="text-right">@item.ProductCode</td>
+                    <td class="text-center">@item.ProductName</td>
+                    <td class="text-center">@item.Description</td>
+                    <td class="text-center">@item.PriceUAN</td>
+                    <td class="text-right">@item.WholesalePrice</td>
+                    <td class="text-center">@item.PriceUSD</td>
+                    <td class="text-right">@item.Guarantee</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

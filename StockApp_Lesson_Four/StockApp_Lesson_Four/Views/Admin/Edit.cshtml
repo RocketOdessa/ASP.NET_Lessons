@@ -1,0 +1,41 @@
+﻿@model Product.Domain.Product
+
+@{
+    Layout = "~/Views/Shared/_NavView.cshtml";
+    ViewBag.Title = "Admin: Edit " + Model.ProductName;
+}
+
+<div class="panel">
+    <div class="panel-heading">
+        <h1>Edit @Model.ProductName</h1>
+    </div>
+    @using (Html.BeginForm("Edit", "Admin", FormMethod.Post))
+    {
+        <div class="panel-body">
+            @Html.HiddenFor(m => m.ID)
+            @foreach (var property in ViewData.ModelMetadata.Properties)
+            {
+                if (property.PropertyName != "ID")
+                {
+                    <div class="form-group">
+                        <label>@(property.PropertyName)</label>
+                        @if (property.PropertyName == "Discription")
+                        {
+                            @Html.TextArea(property.PropertyName, null, new { @class = "form-control"})
+                        }
+                        else
+                        {
+                            @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
+                        }
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="panel-footer">
+            <input type="submit" value="Save" class="btn btn-primary" />
+            @Html.ActionLink("Return to List of Product", "Index","Edit", new { @class = "btn btn-default" })
+        </div>
+    }
+
+</div>

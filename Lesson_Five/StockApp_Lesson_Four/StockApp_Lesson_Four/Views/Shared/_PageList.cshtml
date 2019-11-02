@@ -1,0 +1,6 @@
+﻿
+@model StockApp_Lesson_Four.Models.ProductListView
+
+<div class="btn-group pull-right">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new { page = x, category = Model.CurrentCategory }))
+</div>

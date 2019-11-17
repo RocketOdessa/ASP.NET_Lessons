@@ -1,0 +1,46 @@
+﻿@model StockApp_Lesson_Four.Models.ProductListViewModel
+
+@{
+    Layout = "~/Views/Shared/_NavViewProduct.cshtml";
+    ViewBag.Title = "Index";
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="panel-body">
+        <table class="table table-bordered table-hover table-dark">
+            <tr>
+                <th class="text-left">ID</th>
+                <th class="text-right">Product Code</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Description</th>
+                <th class="text-center">@Html.ActionLink("UAN", "OrderByPrice", "Product", new { sortOrder = ViewBag.UANSortParam })</th>
+                <th class="text-right">Wholesale Price</th>
+                <th class="text-center">@Html.ActionLink("USD", "OrderByPrice", "Product", new { sortOrder = ViewBag.USDSortParam })</th>
+                <th class="text-right">Guarantee</th>
+            </tr>
+            @foreach (var item in Model.Products)
+            {
+                <tr>
+                    <td class="text-left">@item.ID</td>
+                    <td class="text-right">@item.ProductCode</td>
+                    <td class="text-center">@item.ProductName</td>
+                    <td class="text-center">@item.Description</td>
+                    <td class="text-center">@item.PriceUAN</td>
+                    <td class="text-right">@item.WholesalePrice</td>
+                    <td class="text-center">@item.PriceUSD</td>
+                    <td class="text-right">@item.Guarantee</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="btn-group pull-right">
+            @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new { page = x}))
+    </div>
+</body>
+</html>
